@@ -1,0 +1,16 @@
+USE nexopay;
+SET FOREIGN_KEY_CHECKS=0;
+
+DROP TABLE IF EXISTS transactions;
+DROP TABLE IF EXISTS representatives;
+DROP TABLE IF EXISTS product_settlement;
+DROP TABLE IF EXISTS product_pricing;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS accounts;
+DROP TABLE IF EXISTS contacts;
+DROP TABLE IF EXISTS addresses;
+DROP TABLE IF EXISTS customers_pj;
+DROP TABLE IF EXISTS customers_pf;
+DROP TABLE IF EXISTS customers;
+
+SET FOREIGN_KEY_CHECKS=1;
