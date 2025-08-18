@@ -8,6 +8,7 @@ SELECT
   c.tipo_cliente          AS customer_type,
   CASE WHEN c.tipo_cliente='PF' THEN pf.cpf ELSE pj.cnpj END AS tax_id,
   CASE WHEN c.tipo_cliente='PF' THEN pf.nome_completo ELSE pj.razao_social END AS display_name,
+  CASE WHEN c.tipo_cliente='PF' THEN pf.renda_mensal_declarada ELSE NULL END AS renda_mensal_declarada,
   CASE WHEN c.tipo_cliente='PJ' THEN pj.nome_fantasia ELSE NULL END AS trade_name,
   c.status_cliente,
   c.kyc_status,
